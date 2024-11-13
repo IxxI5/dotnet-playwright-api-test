@@ -18,7 +18,7 @@ namespace DotNetPlaywright
         private string? _refreshToken;
 
         /// <summary>
-        /// Launches Playwright for each Tes
+        /// Launches Playwright for each Test
         /// </summary>
         /// <returns></returns>
         [SetUp]
