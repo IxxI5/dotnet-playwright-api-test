@@ -6,6 +6,46 @@ Author: IxxI5
 
 This NUnit test demonstrates basic Playwright capabilities for testing a Web API, specifically the DummyJSON API (https://dummyjson.com). It covers the use of the POST method for logging in to obtain authentication tokens, and the GET method to retrieve the current authenticated user's details by using the obtained tokens. This example showcases Playwright’s ability to handle simple API interactions, such as sending and receiving data using POST and GET requests, making it a useful tool for testing web services.
 
+### Launch a Test
+
+- **Unzip** the downloaded project from Github
+- **Open** the solution in Visual Studio
+- **Install Dependencies and Playwright Browsers** through Developer's Powershell:
+  ```
+  dotnet install		// install all the dependencies
+  
+  playwright install	// download the necessary Playwright browsers
+  ```
+- **Run a Test in Headless Mode** through Developer's Powershell (or Test Explorer UI):
+
+  ```
+  dotnet test					// runs all tests
+ 
+  dotnet test --filter "Category=smoke"		// runs all tests with category="smoke"
+  ```
+
+### Create a .NET Playwright Project Step by Step
+
+- CREATE a New NUnit Cross Platform Project through Visual Studio UI
+  
+  Alternatively, execute the following commands through the Developer's PowerShell:
+  ```
+  dotnet new nunit -o myNUnitPlaywrightProject
+ 
+  cd myNUnitPlaywrightProject
+ 
+  dotnet add package Microsoft.Playwright
+
+  dotnet add package FluentAssertions
+ 
+  dotnet playwright install
+ 
+  dotnet tool install --global Microsoft.Playwright.CLI	// you install it once, globally
+
+  playwright install
+
+  ```
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
