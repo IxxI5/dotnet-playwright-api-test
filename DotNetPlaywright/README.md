@@ -28,7 +28,7 @@ This NUnit test demonstrates basic Playwright capabilities for testing a Web API
 
 - CREATE a New NUnit Cross Platform Project through Visual Studio UI
   
-  Alternatively, execute the following commands through the Developer PowerShell:
+  Alternatively, execute the following commands through the Developer's PowerShell:
   ```
   dotnet new nunit -o myNUnitPlaywrightProject
  
