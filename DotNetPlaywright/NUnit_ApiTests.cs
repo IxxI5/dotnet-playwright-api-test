@@ -2,6 +2,7 @@ using System.Text.Json;
 using DotNetPlaywright.Model;
 using DotNetPlaywright.Storage;
 using Microsoft.Playwright;
+using CategoryAttribute = NUnit.Framework.CategoryAttribute;
 
 namespace DotNetPlaywright
 {
@@ -42,6 +43,8 @@ namespace DotNetPlaywright
         /// </summary>
         /// <returns>JSON object including the accessToken and refreshToken</returns>
         [Test, Order(1)]
+        [Author("IxxI5")]
+        [Category("smoke")]
         public async Task Login()
         {
             try
